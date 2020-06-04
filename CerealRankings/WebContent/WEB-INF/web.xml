@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+ 
+ 
+  <servlet>
+    <servlet-name>RankUp</servlet-name>
+    <servlet-class>controllers.RankUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RankUp</servlet-name>
+    <url-pattern>/rankup</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>RankDown</servlet-name>
+    <servlet-class>controllers.RankDownServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RankDown</servlet-name>
+    <url-pattern>/rankdown</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>AddCereal</servlet-name>
+    <servlet-class>controllers.AddCerealServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCereal</servlet-name>
+    <url-pattern>/addcereal</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>DeleteCereal</servlet-name>
+    <servlet-class>controllers.DeleteCerealServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCereal</servlet-name>
+    <url-pattern>/deletecereal</url-pattern>
+  </servlet-mapping>
+</web-app>
